@@ -17,3 +17,4 @@ SELECT
     ORDER BY    skill_count DESC LIMIT 5;
 
 SELECT job_title,job_title_short FROM job_postings_fact LIMIT 5;
+#![name][link to image]

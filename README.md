@@ -77,19 +77,7 @@ INNER JOIN skills_job_dim ON top_paying_jobs.job_id=skills_job_dim.job_id
 INNER JOIN skills_dim ON skills_dim.skill_id=skills_job_dim.skill_id ORDER BY salary_year_avg DESC
 ```
 ![Top_paying_skills](assets\Top_paying_skills.png)
-*Insights from the Skills Data:*
-*Most In-Demand Skills (Top 10 by Frequency)*
-*SQL (8 mentions)*
-*Python (7 mentions)*
-*Tableau (6 mentions)*
-*R (4 mentions)*
-*Snowflake (3 mentions)*
-*Pandas (3 mentions)*
-*Excel (3 mentions)*
-*Azure (2 mentions)*
-*Bitbucket (2 mentions)*
-*Go (2 mentions)*
-*Key Takeaway: SQL and Python are the most sought-after skills, followed by Tableau and R, which are crucial for data visualization and statistical analysis.*
+*Here is a bar chart showing the top 10 highest-paying skills for data analysts based on average salary.*
 ### 3. Top demanded skills and the number times they were mentioned by a job
 ```sql
 SELECT 
@@ -103,7 +91,7 @@ job_title_short='Data Analyst' AND job_work_from_home=TRUE
 GROUP BY
 skills ORDER BY demand_count DESC LIMIT 5
 ```
-| Rank | Skill    | Demand Count |
+| Rank | Skill   | Demand Count |
 |------|---------|--------------|
 | 1    | SQL     | 7,291        |
 | 2    | Excel   | 4,611        |
